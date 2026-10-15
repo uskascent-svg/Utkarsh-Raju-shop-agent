@@ -164,19 +164,19 @@ python3 -m pytest tests/test_agent.py
 
 ```text
 raju-shop/
+├── .gitignore              # Local files and secrets excluded from Git
 ├── assets/
-│   └── banner.png          # README Hero Banner Image
+│   └── banner.png          # README hero banner
 ├── app/
 │   ├── __init__.py
-│   ├── agent.py            # Raju persona, system prompt & check_inventory tool
-│   └── fast_api_app.py     # ADK FastAPI runner server
+│   ├── agent.py            # Agent persona, instructions and inventory tool
+│   └── fast_api_app.py     # FastAPI endpoints and ADK runner
 ├── tests/
-│   └── test_agent.py       # Pytest suite
-├── index.html              # Interactive Glassmorphism Web UI
-├── pyproject.toml          # Project configuration
+│   └── test_agent.py       # Agent/tool regression tests
+├── index.html              # Interactive shopfront UI
 ├── requirements.txt        # Python dependency manifest
-├── run_setup.ps1           # Windows All-in-One script
-├── run_setup.sh            # Linux/macOS All-in-One script
+├── run_setup.ps1           # Windows setup, tests and launch
+├── run_setup.sh            # Linux/macOS setup, tests and launch
 └── README.md               # Project documentation
 ```
 
